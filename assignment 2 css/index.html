@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Night Circus - Landing Page</title>
+    <!-- Linking Bootstrap CSS for layout and design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Linking custom styles for the page -->
+    <link rel="stylesheet" href="style.css">
+    <!--link with javascript-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">The Night Circus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#author">Author</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#buy-now">Buy Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mt-4 text-center">
+        <img src="images/the night circus.jpg" alt="The Night Circus Cover" class="img-fluid">
+        <h1 class="mt-3">The Night Circus</h1>
+        <p class="lead">A spellbinding masterpiece by Erin Morgenstern</p>
+    </section>
+
+    <!-- Carousel section -->
+<section class="parallax mt-4">
+    <div class="parallax-item" style="background-image: url('images/1_ZcKhGG6LarasUcSpmLCMSg.png');">
+        <div class="parallax-content">
+            <h2>Enter the Magical World</h2>
+            <p>The Night Circus beckons with mystery and awe.</p>
+        </div>
+    </div>
+    <div class="parallax-item" style="background-image: url('images/article-promo-safe-area-Erin.jpg');">
+        <div class="parallax-content">
+            <h2>About the Author</h2>
+            <p>Learn more about Erin Morgenstern’s creative journey.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Accordion section-->
+    <section class="container mt-4">
+        <div class="accordion" id="tableOfContents">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Book Contents
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p>Chapter 1. Prologue: The Circus Arrives</p>
+                        <p>Chapter 2. The Challenge</p>
+                        <p>Chapter 3. The Magician’s Apprentice</p>
+                        <p>Chapter 4. The Red Caravan</p>
+                        <p>Chapter 5. The Duel Begins</p>
+                        <p>Chapter 6. The Grand Finale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Panel (Publisher Info) -->
+    <section class="container mt-4">
+        <ul class="nav nav-tabs" id="publisherData" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about">
+                    About the Book
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews">
+                    Reviews
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="publisher-tab" data-bs-toggle="tab" data-bs-target="#publisher">
+                    Publisher's Info
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content">
+           
+            <div class="tab-pane fade show active" id="about">
+                <p>The Night Circus is a fantasy novel about a magical competition between two rival illusionists, set against the backdrop of an enchanting circus.</p>
+            </div>
+            <div class="tab-pane fade" id="reviews">
+                <p>"As a blown away Reveurs of such an out-of-this-world piece of art, Erin Morgenstern, I thank you dearly from the bottom of my heart for putting such magic into our lives on paper & allowing us to experience & explore this beautiful, mystic world that sparks every sense & more!" - Google</p>
+                <p>"The novel is a genuine pleasure to read. Like any successful illusion, it could be carefully unravelled; but surely, as rare as it is, it should simply be enjoyed." - The Guardian</p>
+                <p>"Debut author Morgenstern doesn't miss a beat in this smashing tale of greed, fate, and love set in a turn of the 20th-century circus." — Publishers Weekly</p>
+            </div>
+            <!-- Publisher's Info tab content -->
+            <div class="tab-pane fade" id="publisher">
+                <h4>Publisher Information</h4>
+                <p><strong>Title:</strong> The Night Circus</p>
+                <p><strong>Author:</strong> Erin Morgenstern</p>
+                <p><strong>Publisher:</strong> Doubleday (USA), Harvill Secker (UK)</p>
+                <p><strong>Publication Date:</strong> September 13, 2011</p>
+                <p><strong>Format:</strong> Hardcover, Paperback, Kindle, Audiobook</p>
+                <p><strong>Genre:</strong> Fantasy, Magical Realism</p>
+                <p><strong>Pages:</strong> 387 pages</p>
+                <p><strong>Language:</strong> English</p>
+                <p><strong>Publisher's Website:</strong> <a href="https://www.penguinrandomhouse.com/books/250036/the-night-circus-by-erin-morgenstern/" target="_blank">Penguin Random House</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Now Section: Button to purchase the book -->
+    <section class="container mt-4 text-center" id="buy-now">
+        <h2>Buy Now</h2>
+        <p>Available in hardcover, paperback, and digital formats.</p>
+        <button class="btn btn-primary">Purchase</button>
+    </section>
+
+    <!-- Email Feedback Section from users -->
+    <div class="container mt-4 text-center">
+        <h2>We'd Love to Hear Your Feedback!</h2>
+        <p>If you have any comments or feedback, feel free to email us at:</p>
+        <a href="mailto:feedback@example.com" class="btn btn-outline-primary">Send Feedback</a>
+    </div>
+    
+    <!-- Footer: Copyright and footer text -->
+    <footer class="mt-4 bg-dark text-light text-center p-3">
+        <p>© 2024 The Night Circus. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS for interactive components like carousel, accordion, and tabs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

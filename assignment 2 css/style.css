@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000;
+}
+.navbar-brand {
+    font-family: 'Cursive', serif;
+    color: #e63946;
+    font-size: 1.8rem;
+}
+.navbar-nav .nav-link {
+    color: #f5f5f5;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+    color: #e63946;
+}
+
+/* Hero Section */
+.container img {
+    max-height: 400px;
+    width: auto;
+    border: 5px solid #e63946;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e63946;
+    margin-top: 20px;
+}
+p.lead {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+/* Carousel */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    filter: invert(100%);
+    background-color: #cc3210;
+}
+
+/* Accordion */
+.accordion-button {
+    background-color: #282828;
+    color: #f5f5f5;
+}
+.accordion-button:hover {
+    background-color: #444;
+}
+.accordion-body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Tab Panel */
+.nav-tabs .nav-link {
+    color: #f5f5f5;
+    background-color: #282828;
+    border: 1px solid #444;
+}
+.nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #e63946;
+}
+.tab-content {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+/* Buy Now Section */
+#buy-now {
+    margin-top: 40px;
+}
+#buy-now h2 {
+    font-size: 2rem;
+    color: #e63946;
+}
+#buy-now button {
+    background-color: #e63946;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+#buy-now button:hover {
+    background-color: #c51134;
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-item {
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-content {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #f5f5f5;
+    font-size: 0.9rem;
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    background-color: #ffc107;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Images */
+.img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p.lead {
+        font-size: 1rem;
+    }
+    .carousel-inner img {
+        height: 250px;
+    }
+}
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
